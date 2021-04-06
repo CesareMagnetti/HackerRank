@@ -12,10 +12,10 @@ python BotSavesPrincess.py
 ```
 
 **example input:**
-3
----
--m-
-p--
+3<br>
+---<br>
+-m-<br>
+p--<br>
 
 **example output:**
 DOWN
