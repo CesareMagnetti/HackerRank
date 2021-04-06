@@ -42,3 +42,9 @@ You have a grid world where dirt spots are marked as ```d``` and bot location is
 3. choose the dirt spot closest to the current bot location as a target destination.
 
 4. subtract the bot's coordinates from the target coordinates to know how much to move, choose the direction where we need to move the most in. If the difference between the target location and bot location is positive we need to move ```RIGHT/DOWN``` else we move ```LEFT/UP``` (i.e. origin at the top left). if both differences are zero we are already on the dirt spot, hence we output ```CLEAN```
+
+## BotCleanStochastic
+
+To run this exercise go to https://www.hackerrank.com/challenges/botcleanr?hr_b=1 and copy and paste the code in ```BotCleanStochastic.py``` to see the bot moving.
+
+This exercise was essentially the same as **BotClean** but even easier: you just have one dirt location per time step so you don't even have to choose, simply move towards it and you are done.
