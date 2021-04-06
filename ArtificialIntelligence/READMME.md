@@ -17,9 +17,9 @@ python BotSavesPrincess.py
 -m-<br>
 p--<br>
 
-**example output:**
-DOWN
-LEFT
+**example output:**<br>
+DOWN<br>
+LEFT<br>
 
 **Brief Explanation**
 1. get the location of the princess and of the bot, this was done looping through the 2D input and checking for keyword compatibility, retrieving indeces. You could use numpy where if you want to use additional libraries
