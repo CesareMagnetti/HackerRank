@@ -32,6 +32,7 @@ LEFT<br>
 
 To run this exercise go to https://www.hackerrank.com/challenges/botclean/problem and copy and paste the code in ```BotClean.py``` to see the bot moving.
 
+**Brief Explanation**
 You have a grid world where dirt spots are marked as ```d``` and bot location is marked as ```b```. SInce everithing is deterministic and you know in advance where all dirt spots are, this is again not an AI question and can be solved simply moving towards the closest dirt spot each time.
 
 1. extract locations of each dirt ("d") spot on the grid. a simple list comprehention where you match keyword "d" will do the job.
