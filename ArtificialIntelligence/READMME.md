@@ -11,7 +11,7 @@ Not really an AI question, more of a problem solving/coding interview question.
 python BotSavesPrincess.py
 ```
 
-**example input:**
+**example input:**<br>
 3<br>
 ---<br>
 -m-<br>
