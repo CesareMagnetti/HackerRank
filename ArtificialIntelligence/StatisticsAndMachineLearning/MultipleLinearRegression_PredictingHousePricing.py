@@ -1,4 +1,3 @@
-import os
 import numpy as np
 
 def MSE(x,y):
@@ -34,7 +33,6 @@ class regression:
     
         
 if __name__ == "__main__":
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
     
     # get shape
     F, N = list(map(int, input().strip('\n').split()))
@@ -60,4 +58,4 @@ if __name__ == "__main__":
     pred = regr.predict(X_test)
     
     for p in pred:
-        fptr.write("{}\n".format(round(p, 2)))
+        print("{}\n".format(round(p, 2)))
