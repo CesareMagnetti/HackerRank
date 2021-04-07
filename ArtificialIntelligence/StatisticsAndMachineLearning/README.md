@@ -26,7 +26,7 @@ This problem was a simple Linear Regression implementation, it was fitted throug
 
 Therefore everything we need to do to build a linear regression model with linear basis functions id to extract the input data, arrange it to the above matrix form and apply the normal equation to estimate optimal parameters through maximum likelyhood estimation. Note that this is prone to overfitting and more advanced routines such as Maximum a Posteriori or Bayesian Linear Regression/Gaussian Processes are usually more situable.
 
-**example input**
+**example input**<br>
 The input of the exercise consisted in the train and test datasets, for the training data the rightmost column was the house price. The first line of input (2 7) represents the number of features F (2) and the number of training points N (7). For the test set we have 4 test points.
 
 2 7<br>
@@ -43,7 +43,7 @@ The input of the exercise consisted in the train and test datasets, for the trai
 0.56 0.64<br>
 0.76 0.18<br>
 
-**example output**
+**example output**<br>
 105.22<br>
 142.68<br>
 132.94<br>
