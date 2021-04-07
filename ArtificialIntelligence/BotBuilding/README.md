@@ -48,3 +48,20 @@ You have a grid world where dirt spots are marked as ```d``` and bot location is
 To run this exercise go to https://www.hackerrank.com/challenges/botcleanr?hr_b=1 and copy and paste the code in ```BotCleanStochastic.py``` to see the bot moving.
 
 This exercise was essentially the same as **BotClean** but even easier: you just have one dirt location per time step so you don't even have to choose, simply move towards it and you are done.
+
+## BotCleanPartiallyObservable
+
+To run this exercise go to https://www.hackerrank.com/challenges/botcleanv2/problem and copy and paste the code in ```BotCleanPartiallyObservable.py``` to see the bot moving.
+
+Again, this exercise did not really require to use any AI or dynamic programming skills. It is the same as ```BotClean``` with the exception that you can only see your 8-adjacent neighborhood.
+
+**Brief Explanation**
+
+1. get the 8-adjacent neighborhood through a simple list comprehention.
+
+2. check if there are dirt cells withing the 8-adjacent neighborhood through another list comprehension.
+
+3. if there was a dirt cell, use the same algorithm as in ```BotClean``` to move towards the closest dirt cell.
+
+4. if there are not dirt cell in the neighborhood make a random movement that does not go outside the board boundaries.
+
