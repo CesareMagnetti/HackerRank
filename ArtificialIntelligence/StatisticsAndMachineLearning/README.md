@@ -20,3 +20,5 @@ This problem was a simple Linear Regression implementation, it was fitted throug
 2. **y** &isin; R<sup>N</sup>
 - A linear model can be expressed mathematically as h<sub>**&theta;**</sub>(**X**) = **X&theta;**, where **&theta;** &isin; R<sup>F</sup>.
 -  We formulate the problem objective as **&theta;**<sup>*</sup> = argmin 0.5&sum;<sub>n=1</sub><sup>N</sup>(**&theta;**<sup>T</sup>x<sub>n</sub> - y<sub>n</sub>)<sup>2</sup> = 0.5(**X&theta;** - **y**)<sup>T</sup>(**X&theta;** - **y**)
+- We then take derivatives w.r.t **&theta;**  and set to zero to find the minimum: **X**<sup>T</sup>(**X&theta;** - **y**) = 0
+- rearrange to get optimal **&theta;** = (**X**<sup>T</sup>**X**)<sup>-1</sup>**X**<sup>T</sup>**y**
