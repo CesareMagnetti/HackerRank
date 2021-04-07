@@ -15,5 +15,8 @@ pip install -r requirements.txt
 This problem was a simple Linear Regression implementation, it was fitted through maximum likelyhood assuming gaussian iid datapoints (i.e. minimimizing the MSE between the ground truth and the model predictions).
 
 **brief explanation:**<br>
-
-- A linear model can be expressed mathematically as h<sub>&theta;</sub>(X) = X&theta;, where X &isin; R<sup>NxF</sup>  = [x<sub>0</sub>, ... , x<sub>N</sub>] with x<sub>n</sub> &isin; R<sup>F</sup> and &theta; &isin; R<sup>F</sup>.
+- We have the following datapoints: 
+1. X &isin; R<sup>NxF</sup>  = [x<sub>0</sub>, ... , x<sub>N</sub>] with x<sub>n</sub> &isin; R<sup>F</sup>
+2. y &isin; R<sup>N</sup>
+- A linear model can be expressed mathematically as h<sub>&theta;</sub>(X) = X&theta;, where &theta; &isin; R<sup>F</sup>.
+-  We formulate the problem objective as &theta;<sup>*</sup> = argmin MSE
