@@ -16,4 +16,4 @@ This problem was a simple Linear Regression implementation, it was fitted throug
 
 **brief explanation:**<br>
 
-- A linear model can be expressed mathematically as h<sub>&theta;</sub>(X) = X&theta, where X isin; R<sup>NxF</sup>  = [x<sub>0</sub>, ... , x<sub>N</sub>] with x<sub>n</sub> &isin; R<sup>F</sup>
+- A linear model can be expressed mathematically as h<sub>&theta;</sub>(X) = X&theta;, where X &isin; R<sup>NxF</sup>  = [x<sub>0</sub>, ... , x<sub>N</sub>] with x<sub>n</sub> &isin; R<sup>F</sup>
