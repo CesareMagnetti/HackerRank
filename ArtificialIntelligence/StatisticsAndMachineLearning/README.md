@@ -16,7 +16,7 @@ This problem was a simple Linear Regression implementation, it was fitted throug
 
 **brief explanation:**<br>
 - We have the following datapoints: 
-1. X &isin; R<sup>NxF</sup>  = [x<sub>0</sub>, ... , x<sub>N</sub>] with x<sub>n</sub> &isin; R<sup>F</sup>
+1. X &isin; R<sup>NxF</sup>  = [x<sub>0</sub>, ... , x<sub>N</sub>] with x<sub>n</sub> = [1, x<sub>n</sub><sup>1</sup>, ..., x<sub>n</sub><sup>F-1</sup>] &isin; R<sup>F</sup>. The 1 takes care of the bias basis.
 2. y &isin; R<sup>N</sup>
 - A linear model can be expressed mathematically as h<sub>&theta;</sub>(X) = X&theta;, where &theta; &isin; R<sup>F</sup>.
--  We formulate the problem objective as &theta;<sup>*</sup> = argmin MSE
+-  We formulate the problem objective as &theta;<sup>*</sup> = argmin 0.5&sum;<sub>n=1</sub><sup>N</sup>(&theta;<sup>T</sup>x<sub>n</sub> - yx<sub>n</sub>)x<sup>2</sup>
