@@ -1,4 +1,4 @@
-# Artificial Intelligence practice questions on HackerRank
+# Bot Building Questions on the AI collection of HackerRank
 
 ## requirements
 No special requirements other than taht python 3.8.2 was used.
