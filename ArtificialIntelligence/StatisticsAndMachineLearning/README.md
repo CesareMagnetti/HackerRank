@@ -4,12 +4,8 @@
 
 Popular Python libraries (i.e. numpy etc.) are used, you can make sure to download all required libraries by:
 
-```bash
+```python
 pip install -r requirements.txt
 ```
 
-```
-requirements.txt
-``` 
-
-is located at the root of the repo
+```requirements.txt``` is located at the root of the repo
