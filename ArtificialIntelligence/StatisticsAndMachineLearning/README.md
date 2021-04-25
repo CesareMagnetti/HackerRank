@@ -59,6 +59,11 @@ This problem builds up on the above linear regression by introducing basis funct
 
 **brief explanation:**<br>
 - We have the following datapoints: 
-1. **X** &isin; R<sup>NxF</sup>  = [**x**<sub>1</sub>, ... , **x**<sub>N</sub>] with **x**<sub>n</sub> = [x<sub>n</sub><sup>1</sup>, ..., x<sub>n</sub><sup>F</sup>] &isin; R<sup>F</sup>. The 1 takes care of the bias basis.
+1. **X** &isin; R<sup>NxF</sup>  = [**x**<sub>1</sub>, ... , **x**<sub>N</sub>] with **x**<sub>n</sub> = [x<sub>n</sub><sup>1</sup>, ..., x<sub>n</sub><sup>F</sup>] &isin; R<sup>F</sup>.
 2. **y** &isin; R<sup>N</sup>
 - Build the basis function matrix **&Phi;** = [&phi;(**x**<sub>1</sub>)<sup>T</sup>, ... , &phi;(**x**<sub>N</sub>)<sup>T</sup>] &isin; R<sup>NxD</sup>, where the basis functions &phi;(**x**<sub>i</sub>)<sup>T</sup> = [1, x<sub>i</sub><sup>1</sup>, ... , x<sub>i</sub><sup>F</sup>, x<sub>i</sub><sup>1</sup>x<sub>i</sub><sup>2</sup>, ... &prod;<sub>j</sub>x<sub>i</sub><sup>j</sup>] &isin; R<sup>D</sup> are really a design choice. In this case they were p<sup>th</sup> order polynomials but really it could be any sensible function (i.e. gaussian RBF basis are a common choice due to their local properties).
+- The model can again be expressed as a linear combination of weights and basis functions as h<sub>**&theta;**</sub>(**X**) = **&Phi; &theta;**, where **&theta;** &isin; R<sup>F</sup>.
+-  We formulate the problem objective as **&theta;**<sup>*</sup> = argmin 0.5&sum;<sub>n=1</sub><sup>N</sup>(**&theta;**<sup>T</sup>x<sub>n</sub> - y<sub>n</sub>)<sup>2</sup> = 0.5(**X&theta;** - **y**)<sup>T</sup>(**X&theta;** - **y**)
+- We then take derivatives w.r.t **&theta;**  and set to zero to find the minimum: **X**<sup>T</sup>(**X&theta;** - **y**) = 0
+- Re-arrange to get optimal **&theta;**<sup>*</sup> = (**X**<sup>T</sup>**X**)<sup>-1</sup>**X**<sup>T</sup>**y**
+- To make predictions then we simply evaluate h<sub>**&theta;**</sub>() at test points **X**<sub>test</sub> as **y**<sub>test</sub> = **X**<sub>test</sub>**&theta;**<sup>*</sup>
