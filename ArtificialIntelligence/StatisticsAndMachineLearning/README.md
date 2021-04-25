@@ -67,3 +67,5 @@ This problem builds up on the above linear regression by introducing basis funct
 - We then take derivatives w.r.t **&theta;**  and set to zero to find the minimum: **&Phi;**<sup>T</sup>(**X&theta;** - **y**) = 0
 - Re-arrange to get optimal **&theta;**<sup>*</sup> = (**&Phi;**<sup>T</sup>**&Phi;**)<sup>-1</sup>**&Phi;**<sup>T</sup>**y**
 - To make predictions then we simply evaluate h<sub>**&theta;**</sub>() at test points **X**<sub>test</sub> as **y**<sub>test</sub> = **&Phi;**<sub>test</sub>**&theta;**<sup>*</sup>
+
+As you can see the problem formulation is still linear and the only difference compared to the previous linear regression is that we now have a basis matrix **&Phi;** &isin; R<sup>NxD</sup> instead of simply having the data **X** &isin; R<sup>NxF</sup>. You can fit it to the same data as the previous exercise and see the change in outcome.
