@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ## Predicting House Prices
 
-This problem was a simple Linear Regression implementation, it was fitted through maximum likelyhood assuming gaussian iid datapoints (i.e. minimimizing the MSE between the ground truth and the model predictions).
+This problem was a simple Linear Regression implementation, it was fitted through maximum likelyhood assuming gaussian iid datapoints (i.e. minimimizing the MSE between the ground truth and the model predictions). Only requires ```NumPy```
 
 **brief explanation:**<br>
 - We have the following datapoints: 
@@ -27,7 +27,8 @@ This problem was a simple Linear Regression implementation, it was fitted throug
 Therefore everything we need to do to build a linear regression model with linear basis functions id to extract the input data, arrange it to the above matrix form and apply the normal equation to estimate optimal parameters through maximum likelyhood estimation. Note that this is prone to overfitting and more advanced routines such as Maximum a Posteriori or Bayesian Linear Regression/Gaussian Processes are usually more situable.
 
 **example input**<br>
-The input of the exercise consisted in the train and test datasets, for the training data the rightmost column was the house price. The first line of input (2 7) represents the number of features F (2) and the number of training points N (7). For the test set we have 4 test points.
+The input of the exercise consisted in the train and test datasets, for the training data the rightmost column was the house price. The first line of input (2 7) represents the number of features F (2) and the number of training points N (7). For the test set we have 4 test points.<br>
+Simply copy and paste the example input after calling ```python MultipleLinearRegression_PredictingHousePricing.py```
 
 2 7<br>
 0.18 0.89 109.85<br>
@@ -48,5 +49,3 @@ The input of the exercise consisted in the train and test datasets, for the trai
 142.68<br>
 132.94<br>
 129.71<br>
-
-Simply copy and paste the example input after calling ```python MultipleLinearRegression_PredictingHousePricing.py```
